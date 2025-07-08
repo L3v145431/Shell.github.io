@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Shell</title>
   <style>
@@ -10,11 +10,14 @@
       padding: 0;
       background: #e2e2e2;
       height: 100%;
+      overflow: hidden; /* 🚫 Bloquea scroll vertical y horizontal */
+      touch-action: none; /* 🚫 Bloquea gestos táctiles como swipe */
     }
     #gameFrame {
       width: 100vw;
-      height: 97vh;
+      height: 100vh;
       border: none;
+      display: block;
     }
   </style>
 </head>
